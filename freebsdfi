@@ -1,0 +1,15 @@
+#!/bin/sh
+echo -e "\033[0;32mInstalling packages\033[0m";
+pkg install --yes kde5 plasma5-sddm-kcm sddm xorg sudo nano btop konversation thunderbird firefox inkscape krita blender vscode gimp signal-desktop; 
+
+echo -e "\033[0;32mEnabling dbus\033[0m";
+sysrc dbus_enable="YES" && service dbus start; 
+
+echo -e "\033[0;32mEnabling sddm\033[0m";
+sysrc sddm_enable="YES" && service sddm start; 
+
+echo -e "\033[0;32mEnabling Mouse\033[0m";
+echo 'ums_load="YES"' >> /boot/loader.conf; 
+
+echo -e "\033[0;32mAdding users in the wheel group to the sudoers file\033[0m";
+echo '%wheel ALL=(ALL:ALL) All' >> /usr/local/etc/sudoers;
