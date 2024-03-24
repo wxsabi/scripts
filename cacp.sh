@@ -45,7 +45,7 @@ fi
 string='```'
 
 # Create a template file
-echo -e "Time spent:\n\n[]:\n\n\n#Uncomment this if you want to add code snippets to the commit message\n#$string\n#$string" > commit_msg.txt
+echo -e "Time spent:\n\n[]\n" > commit_msg.txt
 
 # Write commit message to a temporary file
 nano commit_msg.txt
