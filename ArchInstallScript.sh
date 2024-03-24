@@ -1,3 +1,53 @@
+ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+hwclock --systohc
+nano /etc/locale.gen
+locale-gen
+nano /etc/locale.conf
+nano /etc/hostname
+passwd
+pacman -S grub efibootmgr
+lsblk
+grub-install /dev/nvme0n1p1 --efi-directory=/boot --bootloader-id=archlinux
+grub-mkconfig -o /boot/grub/grub.cfg
+nano /etc/hostname
+reboot
+
+---------------------------------------------------------
+
+#Add User
+useradd -m -G wheel kincho
+passwd -Sa
+nano /etc/sudoers
+passwd kincho
+
+---------------------------------------------------------
+
+#Install Packages
+pacman -Syu --noconfirm konsole firefox blender networkmanager xorg-xwayland plasma-meta sddm amd-ucode dolphin blender kate konversation transmission-gtk obs-studio code krita inkscape kdenlive audacity git openssh lshw audacity steam alsa-utils alsa-plugins alsa-firmware thunderbird s-nail mailx flatpak signal dbus meson fakechroot gtest webkit2gtk libayatana-appindicator gst-libav cmake corefoundation ruby vinagre avahi go nodejs npm python mysql-workbench mariadb imagemagick yarn rust spectacle gopls okular gwenview kdeconnect kolourpaint kamoso elisa akregator kapman kmplot
+
+#For Apex Legends to work
+pacman -R lib32-amdvlk amdvlk
+pacman -S vulkan-radeon lib32-vulkan-radeon
+
+#initialize Mariadb
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+#Enable services
+systemctl enable NetworkManager.service
+systemctl enable sddm.service
+systemctl enable avahi-daemon
+systemctl enable dbus
+systemctl enable mariadb.service
+systemctl enable systemd-timesyncd.service
+
+#Add plasma stuff
+nano .xinitrc
+
+#Enable Repositories
+/etc/pacman.conf
+
+
+
 # Install packages
 
 # mariadb
