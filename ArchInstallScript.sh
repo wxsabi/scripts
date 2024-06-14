@@ -28,7 +28,7 @@ passwd kincho
 #/etc/pacman.conf
 
 #Install Packages
-pacman -Syu --noconfirm --needed konsole godot ark firefox networkmanager xorg-xwayland plasma-meta sddm amd-ucode dolphin blender kate konversation transmission-gtk obs-studio code krita inkscape kdenlive btop obs-studio gtop audacity git openssh lshw audacity steam alsa-utils alsa-plugins alsa-firmware thunderbird s-nail mailx flatpak signal-desktop dbus meson fakechroot gtest webkit2gtk libayatana-appindicator gst-libav cmake ruby vinagre avahi go nodejs npm python mysql-workbench mariadb imagemagick yarn rust spectacle gopls okular gwenview kdeconnect kolourpaint kamoso elisa akregator kapman kmplot
+pacman -Syu --noconfirm --needed konsole godot ark firefox networkmanager xorg-xwayland plasma-meta sddm amd-ucode dolphin blender kate konversation transmission-gtk obs-studio code krita inkscape kdenlive btop obs-studio gtop audacity git openssh lshw audacity steam alsa-utils alsa-plugins alsa-firmware thunderbird s-nail mailx flatpak signal-desktop dbus meson fakechroot gtest webkit2gtk libayatana-appindicator gst-libav cmake ruby vinagre avahi go nodejs npm python mysql-workbench mariadb imagemagick yarn rust spectacle gopls okular gwenview piper kdeconnect kolourpaint kamoso elisa akregator kapman kmplot
 
 #For Apex Legends to work using AMD Graphics cards
 pacman -R lib32-amdvlk amdvlk
