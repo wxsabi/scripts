@@ -23,6 +23,12 @@ passwd kincho
 
 ---------------------------------------------------------
 
+#Fonts
+
+pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts otf-ipaexfont otf-ipafont otf-ipamjfont ttf-hanazono ttf-sazanami ttf-vlgothic adobe-source-han-sans-kr-fonts adobe-source-han-serif-kr-fonts ttf-baekmuk wqy-zenhei wqy-bitmapfont ttf-hannom  	opendesktop-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-hk-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-hk-fonts adobe-source-han-serif-tw-fonts
+
+---------------------------------------------------------
+
 #enable multilib in /etc/pacman.conf for steam
 #Enable Repositories
 #/etc/pacman.conf
