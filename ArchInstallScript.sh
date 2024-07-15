@@ -97,7 +97,7 @@ Note: No software or configuration (except for /etc/pacman.d/mirrorlist) gets ca
 
 Use the pacstrap(8) script to install the base package, Linux kernel and firmware for common hardware:
 
-# pacstrap -K /mnt base linux linux-firmware networkmanager sudo nano
+# pacstrap -K /mnt base linux linux-firmware networkmanager sudo nano bluez bluez-utils alsa-utils xorg-xwayland plasma-meta sddm konsole alsa-utils alsa-plugins alsa-firmware flatpak signal-desktop dbus grub efibootmgr
 
 Configure the system
 Fstab
