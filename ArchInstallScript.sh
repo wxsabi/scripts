@@ -25,7 +25,7 @@ passwd kincho
 
 #Fonts
 
-pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts otf-ipaexfont otf-ipafont otf-ipamjfont ttf-hanazono ttf-sazanami ttf-vlgothic adobe-source-han-sans-kr-fonts adobe-source-han-serif-kr-fonts ttf-baekmuk wqy-zenhei wqy-bitmapfont ttf-hannom  	opendesktop-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-hk-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-hk-fonts adobe-source-han-serif-tw-fonts
+pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts otf-ipaexfont otf-ipafont otf-ipamjfont ttf-hanazono ttf-sazanami ttf-vlgothic adobe-source-han-sans-kr-fonts adobe-source-han-serif-kr-fonts ttf-baekmuk wqy-zenhei wqy-bitmapfont ttf-hannom opendesktop-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-hk-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-cn-fonts adobe-source-han-serif-hk-fonts adobe-source-han-serif-tw-fonts
 
 ---------------------------------------------------------
 
@@ -34,7 +34,7 @@ pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts otf-ipa
 #/etc/pacman.conf
 
 #Install Packages
-pacman -Syu --noconfirm --needed konsole godot ark firefox networkmanager xorg-xwayland plasma-meta sddm amd-ucode dolphin blender kate konversation transmission-gtk obs-studio code krita inkscape kdenlive btop discord obs-studio gtop audacity git openssh lshw audacity steam alsa-utils alsa-plugins alsa-firmware thunderbird s-nail mailx flatpak signal-desktop dbus meson fakechroot gtest webkit2gtk libayatana-appindicator gst-libav cmake ruby vinagre avahi go nodejs npm python mysql-workbench mariadb imagemagick yarn rust spectacle gopls okular gwenview piper kdeconnect kolourpaint kamoso elisa akregator kapman kmplot
+pacman -Syu --noconfirm --needed konsole godot ark firefox networkmanager xorg-xwayland plasma-meta sddm amd-ucode dolphin blender kate konversation transmission-gtk docker obs-studio code krita inkscape kdenlive btop discord obs-studio gtop audacity git openssh lshw audacity steam alsa-utils alsa-plugins alsa-firmware thunderbird s-nail mailx flatpak signal-desktop dbus meson fakechroot gtest webkit2gtk libayatana-appindicator gst-libav cmake ruby vinagre avahi go nodejs npm python mysql-workbench mariadb imagemagick yarn rust spectacle gopls okular gwenview piper kdeconnect kolourpaint kamoso elisa akregator kapman kmplot
 
 #For Apex Legends to work using AMD Graphics cards
 pacman -R lib32-amdvlk amdvlk
