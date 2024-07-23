@@ -29,6 +29,13 @@ pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts otf-ipa
 
 ---------------------------------------------------------
 
+#Davinci resolve dependencies for AUR
+
+sudo pacman -Syu gtk2 libpng12 opencl-driver qt5-webengine qt5-websockets xmlsec java-runtime apr-util luajit libc++ patchelf
+
+---------------------------------------------------------
+
+
 #enable multilib in /etc/pacman.conf for steam
 #Enable Repositories
 #/etc/pacman.conf
