@@ -93,6 +93,7 @@ sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
 #Enable services
 systemctl enable NetworkManager.service
+systemctl enable bluetooth.service
 systemctl enable sddm.service
 systemctl enable avahi-daemon
 systemctl enable dbus
