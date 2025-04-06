@@ -2,7 +2,7 @@
 
 # This is a shell script written by Jay Cisneros<jaycisneros@jacm.io>
 # This script is to be run within a git initialized project folder
-# it will add all the changes is the folder, and open nano to
+# it will add all the changes in the folder, and open nano to
 # allow a multiline message commit with a very small template. It
 # will then update the local changelog, push to the remote repository,
 # delete any temp messages and finally update the remote changelog.
